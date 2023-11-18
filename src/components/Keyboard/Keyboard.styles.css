@@ -1,0 +1,31 @@
+.keyboard {
+  height: 40vh;
+  padding-top: 2rem;
+  width: 100vw;
+}
+
+.keyboard-row {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 8px;
+  width: 50vw;
+}
+
+.keyboard-key {
+  background: #818384;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  justify-content: center;
+  padding: 0;
+  margin: 0 6px 0 0;
+  height: 3.5rem;
+  flex: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.keyboard-key img {
+  width: 30px;
+}
