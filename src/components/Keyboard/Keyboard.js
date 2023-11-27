@@ -13,6 +13,7 @@ import backspace from '../../assets/backspace.svg';
 import { fiveLetterWords } from '../../utils/data';
 import { formatGuess } from '../../utils/formatGuess';
 import { keyboardKeys } from '../../utils/keyboard';
+import { listWordles } from '../../utils/formatAttemps';
 import { useEffect } from 'react';
 import useRestart from '../../hooks/useRestart';
 
@@ -60,7 +61,7 @@ const Keyboard = () => {
           return;
         }
 
-        if (history.includes(currentGuess)) {
+        if (listWordles(attemptedWordles).includes(currentGuess)) {
           window.alert('Already tried the word, use different');
           return;
         }
